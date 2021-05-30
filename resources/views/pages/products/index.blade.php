@@ -20,7 +20,7 @@
                                 <table class="min-w-full divide-y divide-gray-200">
                                     <thead>
                                         <tr>
-                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.id') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.image') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.name') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.price') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.category') }}</th>
@@ -35,8 +35,10 @@
                                         <tr>
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">
-                                                    {{ $product->id }}
+                                                    <img class="inline object-cover w-8 h-8 mr-2 rounded-full" src="{{$product->image}}" alt="Profile image"/>
                                                 </div>
+                                                
+
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">

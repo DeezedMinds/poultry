@@ -33,12 +33,20 @@ class ProductController extends Controller
     
     public function store(Request $request)
     {
+        if ($request->hasFile('photo')) {
+            $imagePath = $request->file('photo');
+            $imageName = time() . '.' . $imagePath->getClientOriginalExtension();
+       
+            $path = $request->file('photo')->storeAs('uploads/products/' . \Auth::id(), $imageName, 'public');
+         };
+
         $product = Product::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'price' => $request->input('price'),
             'subcategory_id' => $request->input('subcategory_id'),
             'featured' => 0,
+            'image' => '/storage/' . $path,
         ]);
 
         return redirect()->route('products.index');
@@ -61,7 +69,22 @@ class ProductController extends Controller
 
     public function update(Request $request, Product $product)
     {
-        $product->update($request->all());
+        $payload = [
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+            'price' => $request->input('price'),
+            'subcategory_id' => $request->input('subcategory_id'),
+            'featured' => 0
+        ];
+
+        if ($request->hasFile('photo')) {
+            $imagePath = $request->file('photo');
+            $imageName = time() . '.' . $imagePath->getClientOriginalExtension();
+            $path = $request->file('photo')->storeAs('uploads/products/' . \Auth::id(), $imageName, 'public');
+            $payload = array_merge($payload, ['image' => '/storage/' . $path]);
+         };
+
+        $product->update($payload);
 
         return redirect()->route('products.index');
     }
