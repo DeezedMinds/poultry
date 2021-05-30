@@ -27,5 +27,6 @@ return [
     'of_product' => ' del producto',
     'upload_photo' => ' Subir foto',
     'create' => 'Crear',
-    'edit' => 'Editar'
+    'edit' => 'Editar',
+    'photo' => 'Imagen'
 ];
