@@ -21,7 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('image')->nullable();
             $table->text('additional_info')->nullable();
             $table->bigInteger('subcategory_id')->unsigned();
-            $table->boolean('featured');
+            $table->boolean('featured')->default(0);
             $table->timestamps();
 
             $table->foreign('subcategory_id')
