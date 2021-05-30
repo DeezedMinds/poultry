@@ -20,7 +20,12 @@ return [
     'image' => 'Imagen',
     'additional_info' => 'Información adicional',
     'category' => 'Categoría',
-    'subcategory' => 'subcategoría',
+    'subcategory' => 'Subcategoría',
     'featured' => 'Destacado',
     'actions' => 'Acciones',
+    'created_at' => 'Creado el',
+    'of_product' => ' del producto',
+    'upload_photo' => ' Subir foto',
+    'create' => 'Crear',
+    'edit' => 'Editar'
 ];
