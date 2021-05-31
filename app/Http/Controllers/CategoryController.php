@@ -20,14 +20,16 @@ class CategoryController extends Controller
     public function create()
     {
         return view('pages.categories.create')->with([
-            'verb' => __('actions.create')
-            ]);
+            'verb' => __('actions.create'),
+            'groups' => collect(Category::GROUPS)->slice(1)
+        ]);
     }
     
     public function store(Request $request)
     {
         $payload = [
             'name' => $request->input('name'),
+            'group_id' => $request->input('group_id'),
         ];
 
         if ($request->hasFile('photo')) {
@@ -48,14 +50,16 @@ class CategoryController extends Controller
         return view('pages.categories.edit')
             ->with([
                 'verb' => __('actions.edit'),
-                'category' => $category
+                'category' => $category,
+                'groups' => collect(Category::GROUPS)->slice(1)
             ]);
     }
 
     public function update(Request $request, Category $category)
     {
         $payload = [
-            'name' => $request->input('name')
+            'name' => $request->input('name'),
+            'group_id' => $request->input('group_id')
         ];
 
         if ($request->hasFile('photo')) {
