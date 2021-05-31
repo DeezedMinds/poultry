@@ -22,7 +22,9 @@
                                         <tr>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.image') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.name') }}</th>
-                                            <th class="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.created_at') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.group') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.category') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.created_at') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('actions.actions') }}</th>
                                         </tr>
                                     </thead>
@@ -37,6 +39,16 @@
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">
                                                     {{ $subcategory->name }}
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                <div class="text-sm leading-5 font-medium text-gray-900">
+                                                    {{ App\Models\Category::GROUPS[$subcategory->category->group_id] }}
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                <div class="text-sm leading-5 font-medium text-gray-900">
+                                                    {{ $subcategory->category->name }}
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
