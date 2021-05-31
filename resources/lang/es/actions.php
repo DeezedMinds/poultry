@@ -17,4 +17,6 @@ return [
     'delete' => 'Eliminar',
     'actions' => 'Acciones',
     'upload_photo' => ' Subir foto',
+    'manage' => ' Gestionar',
+    'logout' => ' Cerrar Sesión',
 ];

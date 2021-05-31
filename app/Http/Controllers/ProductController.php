@@ -27,7 +27,7 @@ class ProductController extends Controller
         );
         return view('pages.products.create')->with([
             'subcategories' => $subcategories,
-            'verb' => __('products.create')
+            'verb' => __('actions.create')
             ]);
     }
     
@@ -65,7 +65,7 @@ class ProductController extends Controller
             ->with([
                 'subcategories' => $subcategories,
                 'product' => $product,
-                'verb' => __('products.edit')
+                'verb' => __('actions.edit')
             ]);
     }
 
