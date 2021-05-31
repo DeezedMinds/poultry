@@ -13,11 +13,17 @@ class Category extends Model
     const NOT_DEFINED_ID = 0;
     const BIRD_ID = 1;
     const PIG_ID = 2;
+    const NOT_DEFINED_NAME = 'Sin definir';
     const BIRD_NAME = 'Aves';
     const PIG_NAME = 'Cerdos';
-    const NOT_DEFINED_NAME = 'Sin definir';
 
-    protected $fillable = ['name', 'image'];
+    const GROUPS = [
+        self::NOT_DEFINED_ID => self::NOT_DEFINED_NAME,
+        self::BIRD_ID => self::BIRD_NAME,
+        self::PIG_ID => self::PIG_NAME
+    ];
+
+    protected $fillable = ['name', 'image', 'group_id'];
 
     public function subcategories()
     {

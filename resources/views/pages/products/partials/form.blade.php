@@ -33,7 +33,7 @@
     </div>
     
     <div class="grid grid-cols-1 mt-5 mx-7">
-      <label for="photo" class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold ">{{ __('products.upload_photo') . __('products.of_product') }}</label>
+      <label for="photo" class="uppercase md:text-sm text-xs text-gray-500 text-light font-semibold ">{{ __('actions.upload_photo') . __('products.of_product') }}</label>
       <div class='flex items-center justify-center w-full'>
         <label for="photo" class='flex flex-col border-4 border-dashed w-full h-32 hover:bg-gray-100 hover:border-green-300 group'>
           <div class='flex flex-col items-center justify-center pt-7'>

@@ -5,7 +5,7 @@
                 {{ __('products.headline') }}
             </h2>
             <button class="bg-green-300 hover:bg-green-400 text-black-800 font-bold py-2 px-4 rounded inline-flex items-center" type="button" onclick="window.location='{{ route("products.create") }}'">
-                <span>{{ __('products.create') }}</span>
+                <span>{{ __('actions.create') }}</span>
                 <img src="{{ asset('vendor/blade-heroicons/o-plus-circle.svg') }}" class="text-red-800 h-4 ml-1"/>
             </button>
         </div>

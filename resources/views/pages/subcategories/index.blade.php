@@ -2,9 +2,9 @@
     <x-slot name="header">
         <div class="flex justify-between items-center">
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-                {{ __('categories.headline') }}
+                {{ __('subcategories.headline') }}
             </h2>
-            <button class="bg-green-300 hover:bg-green-400 text-black-800 font-bold py-2 px-4 rounded inline-flex items-center" type="button" onclick="window.location='{{ route("categories.create") }}'">
+            <button class="bg-green-300 hover:bg-green-400 text-black-800 font-bold py-2 px-4 rounded inline-flex items-center" type="button" onclick="window.location='{{ route("subcategories.create") }}'">
                 <span>{{ __('actions.create') }}</span>
                 <img src="{{ asset('vendor/blade-heroicons/o-plus-circle.svg') }}" class="text-red-800 h-4 ml-1"/>
             </button>
@@ -20,37 +20,31 @@
                                 <table class="min-w-full divide-y divide-gray-200">
                                     <thead>
                                         <tr>
-                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.image') }}</th>
-                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.name') }}</th>
-                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.group') }}</th>
-                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.created_at') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.image') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.name') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('subcategories.created_at') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('actions.actions') }}</th>
                                         </tr>
                                     </thead>
                                     <tbody class="bg-white divide-y divide-gray-200">
-                                        @foreach($categories as $category)
+                                        @foreach($subcategories as $subcategory)
                                         <tr>
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">
-                                                    <img class="inline object-cover w-8 h-8 mr-2 rounded-full" src="{{$category->image}}" alt="Profile image"/>
+                                                    <img class="inline object-cover w-8 h-8 mr-2 rounded-full" src="{{$subcategory->image}}" alt="Profile image"/>
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">
-                                                    {{ $category->name }}
-                                                </div>
-                                            </td>
-                                            <td class="px-6 py-4 whitespace-no-wrap">
-                                                <div class="text-sm leading-5 font-medium text-gray-900">
-                                                    {{ App\Models\Category::GROUPS[$category->group_id] }}
+                                                    {{ $subcategory->name }}
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
-                                                {{ $category->created_at->diffForHumans() }}
+                                                {{ $subcategory->created_at->diffForHumans() }}
                                             </td>
                                             <td class="py-3 px-6 text-center">
                                                 <div class="flex item-center justify-center">
-                                                    <a href=" {{ route('categories.show', $category->id) }}">
+                                                    <a href=" {{ route('subcategories.show', $subcategory->id) }}">
                                                         <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
                                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
@@ -58,14 +52,14 @@
                                                             </svg>
                                                         </div>
                                                     </a>
-                                                    <a href=" {{ route('categories.edit', $category->id) }}">
+                                                    <a href=" {{ route('subcategories.edit', $subcategory->id) }}">
                                                         <div class="w-4 mr-2 transform hover:text-purple-500 hover:scale-110">
                                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
                                                             </svg>
                                                         </div>
                                                     </a>
-                                                    <form method="POST" action="{{route('categories.delete', $category->id)}}">
+                                                    <form method="POST" action="{{route('subcategories.delete', $subcategory->id)}}">
                                                         {{ csrf_field() }}
                                                         {{ method_field('DELETE') }}
 

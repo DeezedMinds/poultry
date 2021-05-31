@@ -11,6 +11,8 @@ class Subcategory extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['name', 'image', 'category_id'];
+
     public function category()
     {
         return $this->belongsTo(Category::class);

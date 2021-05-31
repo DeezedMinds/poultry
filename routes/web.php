@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\SubcategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -65,6 +66,14 @@ Route::middleware('auth')->group(function () {
     Route::get('/categories/{category}/edit', [CategoryController::class, 'edit'])->name('categories.edit');
     Route::put('/categories/{category}', [CategoryController::class, 'update'])->name('categories.update');
     Route::delete('/categories/{category}', [CategoryController::class, 'delete'])->name('categories.delete');
+
+    Route::get('/subcategories', [SubcategoryController::class, 'index'])->name('subcategories.index');
+    Route::get('/subcategories/create', [SubcategoryController::class, 'create'])->name('subcategories.create');
+    Route::post('/subcategories', [SubcategoryController::class, 'store'])->name('subcategories.store');
+    Route::get('/subcategories/{subcategory}', [SubcategoryController::class, 'show'])->name('subcategories.show');
+    Route::get('/subcategories/{subcategory}/edit', [SubcategoryController::class, 'edit'])->name('subcategories.edit');
+    Route::put('/subcategories/{subcategory}', [SubcategoryController::class, 'update'])->name('subcategories.update');
+    Route::delete('/subcategories/{subcategory}', [SubcategoryController::class, 'delete'])->name('subcategories.delete');
 });
 
 require __DIR__ . '/auth.php';
