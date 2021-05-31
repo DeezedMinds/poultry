@@ -45,7 +45,7 @@ class ProductController extends Controller
             'description' => $request->input('description'),
             'price' => $request->input('price'),
             'subcategory_id' => $request->input('subcategory_id'),
-            'featured' => 0,
+            'featured' => $request->input('featured') ? $request->input('featured') : false,
             'image' => '/storage/' . $path,
         ]);
 
@@ -74,7 +74,7 @@ class ProductController extends Controller
             'description' => $request->input('description'),
             'price' => $request->input('price'),
             'subcategory_id' => $request->input('subcategory_id'),
-            'featured' => 0
+            'featured' => $request->input('featured') ? $request->input('featured') : false,
         ];
 
         if ($request->hasFile('photo')) {
