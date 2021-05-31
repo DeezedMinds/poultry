@@ -33,23 +33,25 @@ class ProductController extends Controller
     
     public function store(Request $request)
     {
+        $payload = [
+            'name' => $request->input('name'),
+            'description' => $request->input('description'),
+            'price' => $request->input('price'),
+            'subcategory_id' => $request->input('subcategory_id'),
+            'featured' => $request->input('featured') ? $request->input('featured') : false
+        ];
+
         if ($request->hasFile('photo')) {
             $imagePath = $request->file('photo');
             $imageName = time() . '.' . $imagePath->getClientOriginalExtension();
        
             $path = $request->file('photo')->storeAs('uploads/products/' . \Auth::id(), $imageName, 'public');
+            $payload = array_merge($payload, ['image' => '/storage/' . $path]);
          };
 
-        $product = Product::create([
-            'name' => $request->input('name'),
-            'description' => $request->input('description'),
-            'price' => $request->input('price'),
-            'subcategory_id' => $request->input('subcategory_id'),
-            'featured' => $request->input('featured') ? $request->input('featured') : false,
-            'image' => '/storage/' . $path,
-        ]);
+        $product = Product::create($payload);
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.show', $product->id);
     }
 
     public function edit(Request $request, Product $product)
