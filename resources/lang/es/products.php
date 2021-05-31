@@ -22,11 +22,7 @@ return [
     'category' => 'Categoría',
     'subcategory' => 'Subcategoría',
     'featured' => 'Destacado',
-    'actions' => 'Acciones',
     'created_at' => 'Creado el',
     'of_product' => ' del producto',
-    'upload_photo' => ' Subir foto',
-    'create' => 'Crear',
-    'edit' => 'Editar',
     'photo' => 'Imagen'
 ];

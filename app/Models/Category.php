@@ -17,6 +17,8 @@ class Category extends Model
     const PIG_NAME = 'Cerdos';
     const NOT_DEFINED_NAME = 'Sin definir';
 
+    protected $fillable = ['name', 'image'];
+
     public function subcategories()
     {
         return $this->hasMany(Subcategory::class);
