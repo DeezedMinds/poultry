@@ -61,9 +61,11 @@
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap flex justify-center">
-                                                <span class="bg-{{$product->featured ? 'green' : 'gray'}}-200 text-{{$product->featured ? 'green' : 'gray'}}-600 py-1 px-3 rounded-full text-xs">
-                                                {{ $product->featured ? 'Si' : 'No' }}
-                                                </span>
+                                                <a href=" {{ route('products.feature', $product->id) }}">
+                                                    <span class="bg-{{$product->featured ? 'green' : 'gray'}}-200 text-{{$product->featured ? 'green' : 'gray'}}-600 py-1 px-3 rounded-full text-xs">
+                                                    {{ $product->featured ? 'Si' : 'No' }}
+                                                    </span>
+                                                </a>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap text-sm leading-5 text-gray-500">
                                                 {{ $product->created_at->diffForHumans() }}

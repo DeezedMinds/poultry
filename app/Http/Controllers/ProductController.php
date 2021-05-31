@@ -94,4 +94,12 @@ class ProductController extends Controller
         $product->delete();
         return redirect()->route('products.index');
     }
+
+    public function feature(Request $request, Product $product)
+    {
+        $product->featured = !$product->featured;
+        $product->save();
+
+        return redirect()->route('products.index');
+    }
 }
