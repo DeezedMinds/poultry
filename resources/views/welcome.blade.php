@@ -1,19 +1,29 @@
 @extends('layouts.template')
 @section('content')
-<!-- START homeclassicmain REVOLUTION SLIDER 6.0.1 -->
-<rs-module-wrap id="rev_slider_1_1_wrapper" data-source="gallery">
-    <rs-module id="rev_slider_1_1" data-version="6.1.2" class="rev_slider_1_1_height">
-        <rs-slides>
-            <rs-slide data-key="rs-1" data-title="Slide" data-thumb="" data-anim="ei:d;eo:d;s:d;r:0;t:zoomout;sl:d;">
-                <img src="images/slider/Slider1.jpg" title="sliderbg-01" width="100%" class="rev-slidebg" data-no-retina>
-            </rs-slide>
-            <rs-slide data-key="rs-2" data-title="Slide" data-thumb="" data-anim="ei:d;eo:d;s:d;r:0;t:zoomout;sl:d;">
-                <img src="images/slider/Slider2.jpg" title="sliderbg-02" width="100%" class="rev-slidebg" data-no-retina>
-            </rs-slide>
-        </rs-slides>
-    </rs-module>
-</rs-module-wrap>
-<!-- END REVOLUTION SLIDER -->
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="images/slider/Slider1.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="images/slider/Slider2.jpg" alt="Second slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
 <!-- services-section -->
 <section class="ttm-row zero-padding-section ttm-bgcolor-skincolor clearfix" style="margin-bottom: 5px;">
     <div class="container-fluid">
@@ -32,7 +42,7 @@
                         <!--  featured-content -->
                         <div class="featured-title">
                             <!--  featured-title -->
-                            <h2 style="color: white;"><a href="aves.html">Aves</a></h2>
+                            <h2 style="color: white;"><a href="/aves">Aves</a></h2>
                         </div>
                     </div>
                 </div><!--  featured-icon-box END -->
@@ -50,7 +60,7 @@
                         <!--  featured-content -->
                         <div class="featured-title">
                             <!--  featured-title -->
-                            <h2 style="color: white;"><a href="cerdos.html">Cerdos</a></h2>
+                            <h2 style="color: white;"><a href="/cerdos">Cerdos</a></h2>
                         </div>
                     </div>
                 </div><!--  featured-icon-box END -->
@@ -69,7 +79,7 @@
                             <!--  featured-content -->
                             <div class="featured-title">
                                 <!--  featured-title -->
-                                <h2 style="color: white;"><a href="servicios.html">Servicios</a></h2>
+                                <h2 style="color: white;"><a href="/servicios">Servicios</a></h2>
                             </div>
                         </div>
                     </div>
