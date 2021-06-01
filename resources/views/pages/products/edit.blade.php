@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        <span>{{ __('products.edit') . ' ' . __('products.headline') }}</span>
+        <span>{{ __('actions.edit') . ' ' . __('products.headline') }}</span>
         </h2>
     </x-slot>
     <div class="py-12">
