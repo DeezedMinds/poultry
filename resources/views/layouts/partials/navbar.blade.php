@@ -12,7 +12,7 @@
                                 <!-- site-branding -->
                                 <div class="site-branding mr-auto">
                                     <a class="home-link" href="/" title="Agrotek" rel="home">
-                                        <img src="images/logo.png" id="logo-img" class="img-center" alt="logo">
+                                        <img src="/images/logo.png" id="logo-img" class="img-center" alt="logo">
                                     </a>
                                 </div><!-- site-branding end -->
                                 <!-- widget-info -->
