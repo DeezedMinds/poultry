@@ -12,6 +12,7 @@ class Subcategory extends Model
     use HasFactory;
 
     protected $fillable = ['name', 'image', 'category_id'];
+    protected $appends = ['full_name'];
 
     public function category()
     {
@@ -51,5 +52,10 @@ class Subcategory extends Model
     public function scopePigs($query)
     {
         return $query->whereIn('category_id', Category::pigsIds());
+    }
+
+    public function getFullNameAttribute()
+    {
+        return "{$this->category->name} - {$this->name}";
     }
 }

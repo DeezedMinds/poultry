@@ -39,7 +39,7 @@
                                             @endif
                                             <div class="ttm-shop-icon">
                                                 <!-- ttm-shop-icon -->
-                                                <div class="product-btn add-to-cart-btn"><a href="#">Ver Más</a></div>
+                                                <div class="product-btn add-to-cart-btn"><a href="{{route('web.products.show', $product->id)}}">Ver Más</a></div>
                                             </div>
                                         </div><!-- product-thumbnail end -->
                                         <div class="product-content text-left">
@@ -47,14 +47,6 @@
                                             <div class="product-title">
                                                 <!-- product-title -->
                                                 <h2><a href="product-details.html">{{ $product->name }}</a></h2>
-                                            </div>
-                                            <div class="ttm-ratting-star">
-                                                <!-- ratting-star -->
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
                                             </div>
                                             <span class="product-price">
                                                 <!-- product-Price -->

@@ -211,62 +211,22 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="ttm-processbox-wrapper">
-                        <div class="ttm-processbox text-center">
-                            <div class="ttm-box-image">
-                                <img class="img-fluid" src="https://via.placeholder.com/195X195/444444.jpg" alt="step-one" title="step-one">
-                                <div class="process-num">
-                                    <span class="number">01</span>
+                        @foreach($featured as $index => $product)
+                            <div class="ttm-processbox text-center">
+                                <div class="ttm-box-image">
+                                    <img class="img-fluid" src="{{ $product->image }}" alt="step-one" title="step-one">
+                                    <div class="process-num">
+                                        <span class="number">{{ $index + 1 }}</span>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>{{ $product->name }}</h5>
+                                    </div>
+                                    <div class="ttm-box-description">{{ $product->description }}</div>
                                 </div>
                             </div>
-                            <div class="featured-content">
-                                <div class="featured-title">
-                                    <h5>BEBEDEROS NIPLE PARA LECHONES Y MARRANAS - MONOFLO</h5>
-                                </div>
-                                <div class="ttm-box-description">BEBEDEROS DE ACERO MÁS FAMOSOS DEL MERCADO. FABRICADOS EN ESTADOS UNIDOS</div>
-                            </div>
-                        </div>
-                        <div class="ttm-processbox text-center">
-                            <div class="ttm-box-image">
-                                <img class="img-fluid" src="https://via.placeholder.com/195X195/444444.jpg" alt="step-two" title="step-two">
-                                <div class="process-num">
-                                    <span class="number">02</span>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <div class="featured-title">
-                                    <h5>COMEDERO AUTOMATICO BLU’HOX – ROXELL</h5>
-                                </div>
-                                <div class="ttm-box-description">EL MEJOR SISTEMA DE ALIMENTACIÓN PARA LECHONES. FABRICADOS EN BÉLGICA</div>
-                            </div>
-                        </div>
-                        <div class="ttm-processbox text-center">
-                            <div class="ttm-box-image">
-                                <img class="img-fluid" src="https://via.placeholder.com/195X195/444444.jpg" alt="step-three" title="step-three">
-                                <div class="process-num">
-                                    <span class="number">03</span>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <div class="featured-title">
-                                    <h5>COMEDERO DESTETE TRANSIT – TIGSA</h5>
-                                </div>
-                                <div class="ttm-box-description">EL COMEDERO MÁS RESISTENTE PARA DESTETE DE LECHONES. HECHO EN ESPAÑA</div>
-                            </div>
-                        </div>
-                        <div class="ttm-processbox text-center">
-                            <div class="ttm-box-image">
-                                <img class="img-fluid" src="https://via.placeholder.com/195X195/444444.jpg" alt="step-four" title="step-four">
-                                <div class="process-num">
-                                    <span class="number">04</span>
-                                </div>
-                            </div>
-                            <div class="featured-content">
-                                <div class="featured-title">
-                                    <h5>DILUTOR CRONOS - MEDINOVA</h5>
-                                </div>
-                                <div class="ttm-box-description">DILUTOR DE SEMEN DE LARGA DURACIÓN PARA INSEMINACIÓN ARTIFICIAL. HECHO EN ITALIA</div>
-                            </div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div><!-- row end -->

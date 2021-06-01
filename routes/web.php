@@ -5,6 +5,8 @@ use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\WebController;
+use App\Http\Controllers\BirdController;
+use App\Http\Controllers\PigController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,12 +22,8 @@ use App\Http\Controllers\WebController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/aves', function () {
-    return view('pages.aves');
-});
-Route::get('/cerdos', function () {
-    return view('pages.cerdos');
-});
+Route::get('/aves', [BirdController::class, 'index']);
+Route::get('/cerdos', [PigController::class, 'index']);
 Route::get('/nosotros', function () {
     return view('pages.nosotros');
 });
@@ -39,14 +37,15 @@ Route::get('/representaciones', function () {
     return view('pages.representaciones');
 });
 
-Route::get('/tienda', [WebController::class, 'indexProducts'])->name('web.products.index');
-Route::get('/tienda/{id}', [WebController::class, 'showProduct'])->name('web.products.show');
+Route::get('/productos', [WebController::class, 'index'])->name('web.products.index');
+Route::get('/productos/{id}', [WebController::class, 'show'])->name('web.products.show');
+Route::get('/productos-subcategoria/{id}', [WebController::class, 'subcategoryIndex'])->name('web.products.subcategoryIndex');
 
 Route::post('/send-contact-mail', [WebController::class, 'contact'])->name('contact');
 
 
 
-Route::middleware('auth')->group(function () {
+Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');

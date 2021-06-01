@@ -22,7 +22,7 @@ class ProductController extends Controller
     {
         $subcategories = array(
             '' => 'Seleccione',
-             __('categories.birds') => Subcategory::birds()->pluck('name', 'id'),
+             __('categories.birds') => Subcategory::birds()->get()->pluck('full_name', 'id'),
             __('categories.pigs') => Subcategory::pigs()->pluck('name', 'id'),
         );
         return view('pages.products.create')->with([
