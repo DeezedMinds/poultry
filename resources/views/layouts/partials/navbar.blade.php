@@ -70,6 +70,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="ttm-header-icon ttm-header-user-link">
+                                    <a href="{{route('login')}}" class=""><i class="ti ti-user"></i></a>
+                                </div>
                             </div><!-- header-icons end -->
                             <div class="ttm-menu-toggle">
                                 <input type="checkbox" id="menu-toggle-form" />
