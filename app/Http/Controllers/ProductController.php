@@ -57,7 +57,7 @@ class ProductController extends Controller
     public function edit(Request $request, Product $product)
     {
         $subcategories = array(
-            __('categories.birds') => Subcategory::birds()->pluck('name', 'id'),
+            __('categories.birds') => Subcategory::birds()->get()->pluck('full_name', 'id'),
             __('categories.pigs') => Subcategory::pigs()->pluck('name', 'id'),
         );
 

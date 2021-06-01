@@ -23,6 +23,7 @@
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.image') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.name') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.price') }}</th>
+                                            <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('categories.group') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.category') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-left text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.subcategory') }}</th>
                                             <th class="px-6 py-3 bg-gray-50 text-center text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">{{ __('products.featured') }}</th>
@@ -48,6 +49,11 @@
                                             <td class="px-6 py-4 whitespace-no-wrap">
                                                 <div class="text-sm leading-5 font-medium text-gray-900">
                                                     {{ $product->price }} $
+                                                </div>
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-no-wrap">
+                                                <div class="text-sm leading-5 font-medium text-gray-900">
+                                                    {{ App\Models\Category::GROUPS[$product->subcategory->category->group_id] }}
                                                 </div>
                                             </td>
                                             <td class="px-6 py-4 whitespace-no-wrap">
