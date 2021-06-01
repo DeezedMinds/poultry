@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubcategoryController;
+use App\Http\Controllers\WebController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,9 +26,6 @@ Route::get('/aves', function () {
 Route::get('/cerdos', function () {
     return view('pages.cerdos');
 });
-Route::get('/tienda', function () {  //maqueta
-    return view('pages.tienda');
-});
 Route::get('/nosotros', function () {
     return view('pages.nosotros');
 });
@@ -41,7 +39,10 @@ Route::get('/representaciones', function () {
     return view('pages.representaciones');
 });
 
+Route::get('/tienda', [WebController::class, 'indexProducts'])->name('web.products.index');
+Route::get('/tienda/{id}', [WebController::class, 'showProduct'])->name('web.products.show');
 
+Route::post('/send-contact-mail', [WebController::class, 'contact'])->name('contact');
 
 
 

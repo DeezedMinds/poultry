@@ -310,49 +310,49 @@
                                 <span></span>
                             </div>
                         </div><!-- section title end -->
-                        <form id="ttm-quote-form" class="row ttm-quote-form clearfix" method="post" action="#">
-                            <div class="col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input name="name" type="text" class="form-control with-border bg-white" placeholder="Nombre completo:" required="required">
-                                </div>
+                        {{ Form::open(['route' => 'contact', 'method' => 'post', 'class' => 'row ttm-quote-form clearfix']) }}
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input name="name" type="text" class="form-control with-border bg-white" placeholder="Nombre completo:" required="required">
                             </div>
-                            <div class="col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input name="phone" type="text" placeholder="Telefono:" required="required" class="form-control with-border bg-white">
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input name="phone" type="text" placeholder="Telefono:" required="required" class="form-control with-border bg-white">
                             </div>
-                            <div class="col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input name="address" type="text" placeholder="Email: " required="required" class="form-control with-border bg-white">
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input name="email" type="text" placeholder="Email: " required="required" class="form-control with-border bg-white">
                             </div>
-                            <div class="col-sm-6 col-md-6">
-                                <div class="form-group">
-                                    <input name="subject" type="text" placeholder="Asunto:" required="required" class="form-control with-border bg-white">
-                                </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6">
+                            <div class="form-group">
+                                <input name="subject" type="text" placeholder="Asunto:" required="required" class="form-control with-border bg-white">
                             </div>
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <select class="form-control with-border bg-white">
-                                        <option>Aves</option>
-                                        <option>Cerdos</option>
-                                        <option>Servicios</option>
-                                    </select>
-                                </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                <select name="type" class="form-control with-border bg-white">
+                                    <option value="Aves">Aves</option>
+                                    <option value="Cerdos">Cerdos</option>
+                                    <option value="Servicios">Servicios</option>
+                                </select>
                             </div>
-                            <div class="col-sm-12 col-md-12">
-                                <div class="form-group">
-                                    <textarea name="Massage" rows="4" placeholder="Escribir mensaje…" required="required" class="form-control with-border bg-white"></textarea>
-                                </div>
+                        </div>
+                        <div class="col-sm-12 col-md-12">
+                            <div class="form-group">
+                                <textarea name="message" rows="4" placeholder="Escribir mensaje…" required="required" class="form-control with-border bg-white"></textarea>
                             </div>
-                            <div class="col-md-12">
-                                <div class="text-left">
-                                    <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey w-100" value="">
-                                        Enviar mensaje
-                                    </button>
-                                </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="text-left">
+                                <button type="submit" id="submit" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey w-100" value="">
+                                    Enviar mensaje
+                                </button>
                             </div>
-                        </form>
+                        </div>
+                        {{ Form::close() }}
                     </div>
                 </div>
             </div><!-- row -->
