@@ -82,64 +82,22 @@
                                     <li><a href="/nosotros">Nosotros</a></li>
                                     <li><a href="/aves">Aves</a>
                                         <ul>
-                                            <li><a href="/aves">Pollo de engorde</a>
+                                            @foreach(App\Models\Category::birds()->get() as $bird)
+                                            <li><a href="/aves">{{$bird->name }}</a>
                                                 <ul>
-                                                    <li><a href="#">Ambiente controlado</a></li>
-                                                    <li><a href="#">Bebederos</a></li>
-                                                    <li><a href="#">Comederos</a></li>
-                                                    <li><a href="#">Iluminación LED</a></li>
-                                                    <li><a href="#">Pesaje</a></li>
-                                                    <li><a href="#">Sistema de suspención</a></li>
-                                                    <li><a href="#">Transporte</a></li>
+                                                    @foreach($bird->subcategories as $sub)
+                                                        <li><a href="#">{{ $sub->name }}</a></li>
+                                                    @endforeach
                                                 </ul>
                                             </li>
-                                            <li><a target="_blank" href="#">Gallinas ponedoras</a>
-                                                <ul>
-                                                    <li><a href="#">Ambiente controlado</a></li>
-                                                    <li><a href="#">Bebederos</a></li>
-                                                    <li><a href="#">Comederos</a></li>
-                                                    <li><a href="#">Despicadoras</a></li>
-                                                    <li><a href="#">Iluminación LED</a></li>
-                                                    <li><a href="#">Jaulas avícolas</a></li>
-                                                    <li><a href="#">Manejo del huevo</a></li>
-                                                    <li><a href="#">Pesaje</a></li>
-                                                    <li><a href="#">Sistema de suspención</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a target="_blank" href="#">Reproductoras</a>
-                                                <ul>
-                                                    <li><a href="#">Ambiente controlado</a></li>
-                                                    <li><a href="#">Bebederos</a></li>
-                                                    <li><a href="#">Comederos</a></li>
-                                                    <li><a href="#">Iluminación LED</a></li>
-                                                    <li><a href="#">Manejo del huevo</a></li>
-                                                    <li><a href="#">Nidos-Nidales</a></li>
-                                                    <li><a href="#">Pesaje</a></li>
-                                                    <li><a href="#">Sistema de suspención</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a target="_blank" href="#">Pavos</a>
-                                                <ul>
-                                                    <li><a href="#">Ambiente controlado</a></li>
-                                                    <li><a href="#">Bebederos</a></li>
-                                                    <li><a href="#">Comederos</a></li>
-                                                    <li><a href="#">Iluminación LED</a></li>
-                                                    <li><a href="#">Pesaje</a></li>
-                                                    <li><a href="#">Sistema de suspención</a></li>
-                                                    <li><a href="#">Transporte</a></li>
-                                                </ul>
-                                            </li>
+                                            @endforeach
                                         </ul>
                                     </li>
                                     <li><a href="/cerdos">Cerdos</a>
                                         <ul>
-                                            <li><a target="_blank" href="#">Bebederos</a></li>
-                                            <li><a target="_blank" href="#">Comederos</a></li>
-                                            <li><a target="_blank" href="#">Inseminación artificial</a></li>
-                                            <li><a target="_blank" href="#">Ambiente Controlado</a></li>
-                                            <li><a target="_blank" href="#">Iluminación led</a></li>
-                                            <li><a target="_blank" href="#">Sistema de suspeción</a></li>
-                                            <li><a target="_blank" href="#">Pesaje</a></li>
+                                        @foreach(App\Models\Subcategory::pigs()->get() as $pig)
+                                            <li><a href="#">{{ $pig->name }}</a></li>
+                                        @endforeach
                                         </ul>
                                     </li>
                                     </li>
