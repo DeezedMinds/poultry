@@ -5,7 +5,7 @@
                 Detalle del producto #{{$product->id}}, {{ $product->name }}
             </h2>
             <button class="bg-green-300 hover:bg-green-400 text-black-800 font-bold py-2 px-4 rounded inline-flex items-center" type="button" onclick="window.location='{{ route("products.edit", $product->id) }}'">
-                <span>{{ __('products.edit') }}</span>
+                <span>{{ __('actions.edit') }}</span>
                 <img src="{{ asset('vendor/blade-heroicons/o-pencil.svg') }}" class="text-red-800 h-4 ml-1"/>
             </button>
         </div>
