@@ -37,7 +37,6 @@ class ProductController extends Controller
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'price' => $request->input('price'),
-            'subcategory_id' => $request->input('subcategory_id'),
             'featured' => $request->input('featured') ? $request->input('featured') : false
         ];
 
@@ -50,6 +49,7 @@ class ProductController extends Controller
          };
 
         $product = Product::create($payload);
+        $product->subcategory()->sync($request->input('subcategory_id'));
 
         return redirect()->route('products.show', $product->id);
     }
@@ -64,6 +64,7 @@ class ProductController extends Controller
         return view('pages.products.edit')
             ->with([
                 'subcategories' => $subcategories,
+                'selected_subcategories' => $product->subcategory->pluck('id')->toArray(),
                 'product' => $product,
                 'verb' => __('actions.edit')
             ]);
@@ -75,7 +76,6 @@ class ProductController extends Controller
             'name' => $request->input('name'),
             'description' => $request->input('description'),
             'price' => $request->input('price'),
-            'subcategory_id' => $request->input('subcategory_id'),
             'featured' => $request->input('featured') ? $request->input('featured') : false,
         ];
 
@@ -87,8 +87,9 @@ class ProductController extends Controller
          };
 
         $product->update($payload);
+        $product->subcategory()->sync($request->input('subcategory_id'));
 
-        return redirect()->route('products.index');
+        return redirect()->route('products.show', $product->id);
     }
 
     public function delete(Request $request, Product $product)

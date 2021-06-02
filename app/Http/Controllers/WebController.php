@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Product;
+use App\Models\ProductSubcategory;
 use App\Models\Subcategory;
 
 
@@ -17,14 +18,16 @@ class WebController extends Controller
 
     public function subcategoryIndex($subcategoryId)
     {
-        $products = Product::where('subcategory_id', $subcategoryId)->orderBy('id', 'ASC')->paginate(12);
+        $products = Subcategory::find($subcategoryId)->products()->paginate(12);
         return view('pages.store.index', compact('products'));
     }
 
     public function show($id)
     {
         $product = Product::with('subcategory.category')->findOrFail($id);
-        $relatedProducts = Product::with('subcategory.category')->where('subcategory_id', '=', $product->subcategory_id)->orderBy('name', 'ASC')->get();
+        $subcategoryIds = $product->subcategory->pluck('id');
+        $relatedProductsIds = ProductSubcategory::whereIn('subcategory_id', $subcategoryIds)->get()->unique('product_id')->pluck('product_id');
+        $relatedProducts = Product::whereIn('id', $relatedProductsIds)->get();
 
         return view('pages.store.show', compact('product', 'relatedProducts'));
     }
