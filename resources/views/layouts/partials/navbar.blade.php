@@ -19,8 +19,10 @@
                                 <div class="widget_info d-flex flex-row align-items-center justify-content-end">
                                     <div class="widget_icon"><i class="flaticon flaticon-speech-bubble"></i></div>
                                     <div class="widget_content">
-                                        <h5 class="widget_title">Llámanos</h5>
-                                        <p class="widget_desc">+51 994239667</p>
+                                        <a href="https://api.whatsapp.com/send?phone=51994239667">
+                                            <h5 class="widget_title">Llámanos</h5>
+                                            <p class="widget_desc">+51 994239667</p>
+                                        </a>
                                     </div>
                                 </div><!-- widget-info end -->
                                 <!-- widget-info -->
@@ -68,6 +70,9 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="ttm-header-icon ttm-header-user-link">
+                                    <a href="{{route('login')}}" class=""><i class="ti ti-user"></i></a>
+                                </div>
                             </div><!-- header-icons end -->
                             <div class="ttm-menu-toggle">
                                 <input type="checkbox" id="menu-toggle-form" />
@@ -86,7 +91,7 @@
                                             <li><a href="/aves">{{$bird->name }}</a>
                                                 <ul>
                                                     @foreach($bird->subcategories as $sub)
-                                                        <li><a href="#">{{ $sub->name }}</a></li>
+                                                        <li><a href="{{route('web.products.subcategoryIndex', $sub->id)}}">{{ $sub->name }}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </li>
@@ -96,7 +101,7 @@
                                     <li><a href="/cerdos">Cerdos</a>
                                         <ul>
                                         @foreach(App\Models\Subcategory::pigs()->get() as $pig)
-                                            <li><a href="#">{{ $pig->name }}</a></li>
+                                            <li><a href="{{route('web.products.subcategoryIndex', $pig->id)}}">{{ $pig->name }}</a></li>
                                         @endforeach
                                         </ul>
                                     </li>

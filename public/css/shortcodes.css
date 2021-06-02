@@ -1195,7 +1195,7 @@ body{ counter-reset: section; }
 
 /*  style7 */
 .featured-icon-box.left-icon.style7 .featured-content { padding-left: 24px;}
-.featured-icon-box.left-icon.style7{padding: 30px 15px 30px 50px; height: 100%;}
+.featured-icon-box.left-icon.style7{display: flex;justify-content: center;align-items: center;padding: 10px;}
 .featured-icon-box.left-icon.style7 .ttm-icon.ttm-icon_element-size-lg i{font-size: 37px;}
 .featured-icon-box.left-icon.style7 .ttm-icon{
     background-color: rgba(255,255,255,0.2);

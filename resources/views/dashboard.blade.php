@@ -39,7 +39,7 @@
                             <button
                                 class="mb-2 md:mb-0 bg-gray-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-gray-800"
                                 type="button" aria-label="like"
-                                onclick="window.location.href='/products'"
+                                onclick="window.location.href='{{route('products.index')}}'"
                             >
                                 {{ __('actions.manage') }}
                             </button>
@@ -72,7 +72,7 @@
                             <button
                                 class="mb-2 md:mb-0 bg-gray-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-gray-800"
                                 type="button" aria-label="like"
-                                onclick="window.location.href='/categories'"
+                                onclick="window.location.href='{{route('categories.index')}}'"
                             >
                                 {{ __('actions.manage') }}
                             </button>
@@ -105,7 +105,7 @@
                             <button
                                 class="mb-2 md:mb-0 bg-gray-900 px-5 py-2 shadow-sm tracking-wider text-white rounded-full hover:bg-gray-800"
                                 type="button" aria-label="like"
-                                onclick="window.location.href='/subcategories'"
+                                onclick="window.location.href='{{route('subcategories.index')}}'"
                             >
                                 {{ __('actions.manage') }}
                             </button>

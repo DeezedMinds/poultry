@@ -1440,6 +1440,19 @@ div.product ul.tabs li a,
     z-index: 9;
     color: #fff;
 }
+.ttm-header-icons .ttm-header-user-link a {
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    z-index: 9;
+    color: #fff;
+}
 
 .ttm-header-icons .ttm-header-icon{padding-left: 15px; }
 .ttm-header-style-01 .ttm-header-icons .ttm-header-icon,
