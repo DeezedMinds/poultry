@@ -21,6 +21,7 @@ return [
     'additional_info' => 'Información adicional',
     'category' => 'Categoría',
     'subcategory' => 'Subcategoría',
+    'subcategories' => 'Subcategorías',
     'featured' => 'Destacado',
     'created_at' => 'Creado el',
     'of_product' => ' del producto',

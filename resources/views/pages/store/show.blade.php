@@ -23,12 +23,15 @@
                             </div>
                             <div class="summary entry-summary">
                                 <h3 class="singel_product_title">{{ $product->name }}</h3>
-                                <div class="product-rating clearfix">
-                                    <a class="review-link" rel="nofollow"> {{ $product->subcategory->name }}</a>
-                                </div>
                                 <div class="product-details__short-description">
                                     <p>{{ $product->description }}</p>
                                 </div>
+                                <h5 class="">Subcategorias</h5>
+                                @foreach($product->subcategory as $sub)
+                                    <div class="product-rating clearfix">
+                                        <a class="review-link" rel="nofollow"> {{ $sub->category->name . ' - ' . $sub->name }}</a>
+                                    </div>
+                                @endforeach
 
                             </div>
                         </div>
@@ -56,7 +59,7 @@
                         <div class="row">
                             @foreach($relatedProducts as $relatedProduct)
                             <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product">
+                                <div class="product" onclick="window.location.href='{{route('web.products.show', $relatedProduct->id)}}'">
                                     <!-- product -->
                                     <div class="product-thumbnail">
                                         <!-- product-thumbnail -->
@@ -76,7 +79,7 @@
                                         </div>
                                         <span class="product-price">
                                             <!-- product-Price -->
-                                            <span class="product-Price-currencySymbol">{{ $relatedProduct->subcategory->name }}
+                                            
                                             </span>
                                     </div>
                                 </div>

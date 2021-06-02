@@ -20,14 +20,8 @@ class CreateProductsTable extends Migration
             $table->string('price')->default('00.0');
             $table->string('image')->nullable();
             $table->text('additional_info')->nullable();
-            $table->bigInteger('subcategory_id')->unsigned();
             $table->boolean('featured')->default(0);
             $table->timestamps();
-
-            $table->foreign('subcategory_id')
-                ->references('id')
-                ->on('subcategories')
-                ->onDelete('cascade');
         });
     }
 

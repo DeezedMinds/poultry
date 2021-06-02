@@ -19,17 +19,28 @@
       {!! $errors->first('description', '<p class="bg-red-100 border border-red-400 py-3 rounded relative text-red-700">:message</p>') !!}
     </div>
     
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-5 md:gap-8 mt-5 mx-7">
-      <div class="grid grid-cols-1">
-        {{ Form::label('price', __('products.price').__('products.of_product'), ['class' => 'uppercase md:text-sm text-xs text-gray-500 text-light font-semibold']) }}
-        {{ Form::number('price', null, ['class' => 'py-2 px-3 rounded-lg border-2 border-green-300 mt-1 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent', 'id' =>'categories', 'step' => '0.1', 'min' => '0.1'])}}
-        {!! $errors->first('subcategory', '<p class="bg-red-100 border border-red-400 py-3 rounded relative text-red-700">:message</p>') !!}
-      </div>
-      <div class="grid grid-cols-1">
-        {{ Form::label('subcategory_id', __('products.subcategory').__('products.of_product'), ['class' => 'uppercase md:text-sm text-xs text-gray-500 text-light font-semibold']) }}
-        {{ Form::select('subcategory_id', $subcategories, null, ['class' => 'py-2 px-3 rounded-lg border-2 border-green-300 mt-1 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent', 'id' =>'categories'])}}
-        {!! $errors->first('subcategory_id', '<p class="bg-red-100 border border-red-400 py-3 rounded relative text-red-700">:message</p>') !!}
-      </div>
+    <div class="grid grid-cols-1 mt-5 mx-7">
+      {{ Form::label('price', __('products.price').__('products.of_product'), ['class' => 'uppercase md:text-sm text-xs text-gray-500 text-light font-semibold']) }}
+      {{ Form::number('price', null, ['class' => 'py-2 px-3 rounded-lg border-2 border-green-300 mt-1 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent', 'id' =>'categories', 'step' => '0.01', 'min' => '0.01'])}}
+      {!! $errors->first('subcategory', '<p class="bg-red-100 border border-red-400 py-3 rounded relative text-red-700">:message</p>') !!}
+    </div>
+
+    <div class="grid grid-cols-1 mt-5 mx-7">
+      {{ Form::label('subcategory_id', __('products.subcategory').__('products.of_product'), ['class' => 'uppercase md:text-sm text-xs text-gray-500 text-light font-semibold']) }}
+      @if(!isset($product))
+      {{ Form::select('subcategory_id', $subcategories, null, ['class' => 'py-2 px-3 rounded-lg border-2 border-green-300 mt-1 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent', 'id' =>'categories', 'multiple'=>'multiple', 'name' => 'subcategory_id[]'])}}
+      @else
+      <select multiple="multiple" name="subcategory_id[]" id="subcategory_id" class="py-2 px-3 rounded-lg border-2 border-green-300 mt-1 focus:outline-none focus:ring-2 focus:ring-green-600 focus:border-transparent">
+        @foreach($subcategories as $name => $group)
+          <optgroup label="{{$name}}">
+            @foreach($group as $key => $sub)
+              <option value="{{$key}}" @if(in_array($key, $selected_subcategories)) selected="selected"@endif>{{$sub}}</option>
+            @endforeach
+          </optgroup>
+        @endforeach
+        </select>
+      @endif
+      {!! $errors->first('subcategory_id', '<p class="bg-red-100 border border-red-400 py-3 rounded relative text-red-700">:message</p>') !!}
     </div>
     
     <div class="grid grid-cols-1 mt-5 mx-7">

@@ -14,7 +14,7 @@ class Product extends Model
 
     public function subcategory()
     {
-        return $this->belongsTo(Subcategory::class);
+        return $this->belongsToMany(Subcategory::class);
     }
 
     public function isFeatured()

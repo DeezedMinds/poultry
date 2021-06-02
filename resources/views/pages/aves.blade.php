@@ -231,7 +231,7 @@
                 <div class="col-lg-12">
                     <div class="ttm-processbox-wrapper">
                         @foreach($featured as $index => $product)
-                        <div class="ttm-processbox text-center">
+                        <div class="ttm-processbox text-center" onclick="window.location.href='{{route('web.products.show', $product->id)}}'">
                             <div class="ttm-box-image">
                                 <img class="img-fluid" src="{{ $product->image }}" alt="step-one" title="step-one">
                                 <div class="process-num">
