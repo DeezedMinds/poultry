@@ -353,25 +353,98 @@
                 <ol class="carousel-indicators">
                     <li data-target="#carouselExampleIndicators2" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselExampleIndicators2" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators2" data-slide-to="4"></li>
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/agrologger.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/agritech.png" title="single-img-one" alt="single-img-one">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/roxell.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/agrologger.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/dosatron.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/kestrel.png" title="single-img-one" alt="single-img-one">
                             </div>
                         </div>
                     </div>
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/sephnos.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/roxell.png" title="single-img-one" alt="single-img-one">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/tigsa.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/salter.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sephno.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/tigsa.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/valco.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/airetecnica.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/allflex.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/medinova.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/monoflo.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/novatec.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/raidex.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/rivaselegg.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-6">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/shenandoah.png" title="single-img-one" alt="single-img-one">
+                            </div>
+                            <div class="col-6">
+                                
+                            </div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-6">
+                                
+                            </div>
+                            <div class="col-6">
+                                
                             </div>
                         </div>
                     </div>
