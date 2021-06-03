@@ -7,6 +7,7 @@ use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\WebController;
 use App\Http\Controllers\BirdController;
 use App\Http\Controllers\PigController;
+use App\Http\Controllers\ResourceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -74,6 +75,14 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/subcategories/{subcategory}/edit', [SubcategoryController::class, 'edit'])->name('subcategories.edit');
     Route::put('/subcategories/{subcategory}', [SubcategoryController::class, 'update'])->name('subcategories.update');
     Route::delete('/subcategories/{subcategory}', [SubcategoryController::class, 'delete'])->name('subcategories.delete');
+    
+    Route::get('/resources', [ResourceController::class, 'index'])->name('resources.index');
+    Route::get('/resources/create', [ResourceController::class, 'create'])->name('resources.create');
+    Route::post('/resources', [ResourceController::class, 'store'])->name('resources.store');
+    Route::get('/resources/{resource}', [ResourceController::class, 'show'])->name('resources.show');
+    Route::get('/resources/{resource}/edit', [ResourceController::class, 'edit'])->name('resources.edit');
+    Route::put('/resources/{resource}', [ResourceController::class, 'update'])->name('resources.update');
+    Route::delete('/resources/{resource}', [ResourceController::class, 'delete'])->name('resources.delete');
 });
 
 require __DIR__ . '/auth.php';
