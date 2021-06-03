@@ -403,7 +403,7 @@
                 <div class="section-title text-center clearfix">
                     <div class="title-header">
                         <h5>RECIENTES ENTREGAS</h5>
-                        <h2 class="title">Últimos proyectos</h2>
+                        <h2 class="title">Últimos recursos</h2>
                     </div>
                     <div class="heading-seperator">
                         <span></span>
@@ -420,186 +420,41 @@
     <div class="container">
         <div class="row multi-columns-row ttm-boxes-spacing-10px ttm-bgcolor-white mt_140">
             <!-- row -->
+
+            @foreach(App\Models\Resource::all()->take(6) as $resource)
             <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
                 <!-- featured-imagebox -->
                 <div class="featured-imagebox featured-imagebox-portfolio style1">
                     <div class="featured-thumbnail">
                         <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
                     </div><!-- featured-thumbnail END-->
                     <div class="ttm-box-view-overlay">
                         <!-- ttm-box-view-overlay -->
                         <div class="ttm-media-link">
                             <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
+                            <a href="{{$resource->pdf}}" download="{{$resource->name}}.pdf" class="">
+                                <i class="ti ti-download"></i>
                             </a>
                         </div>
                         <div class="featured-content">
                             <!-- featured-content-->
                             <div class="featured-title">
                                 <!-- featured-title-->
-                                <h5><a href="#">Robotics in Harvests</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Fresh Garden</p>
-                            </div>
-                        </div>
-                    </div><!-- ttm-box-view-overlay end-->
-                </div>
-                <!-- featured-imagebox -->
-            </div>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1">
-                    <div class="featured-thumbnail">
-                        <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
-                    </div><!-- featured-thumbnail END-->
-                    <div class="ttm-box-view-overlay">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-media-link">
-                            <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
-                            </a>
-                        </div>
-                        <div class="featured-content">
-                            <!-- featured-content-->
-                            <div class="featured-title">
-                                <!-- featured-title-->
-                                <h5><a href="#">The Farming Season</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Dairy Farm</p>
+                                <h5>
+                                    <a href="{{$resource->pdf}}" download="{{$resource->name}}.pdf">
+                                        {{ $resource->name }}
+                                    </a>
+                                </h5>
                             </div>
                         </div>
                     </div><!-- ttm-box-view-overlay end-->
                 </div>
                 <!-- featured-imagebox -->
             </div>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1">
-                    <div class="featured-thumbnail">
-                        <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
-                    </div><!-- featured-thumbnail END-->
-                    <div class="ttm-box-view-overlay">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-media-link">
-                            <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
-                            </a>
-                        </div>
-                        <div class="featured-content">
-                            <!-- featured-content-->
-                            <div class="featured-title">
-                                <!-- featured-title-->
-                                <h5><a href="#">Natural Stone Walks</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Garden Care</p>
-                            </div>
-                        </div>
-                    </div><!-- ttm-box-view-overlay end-->
-                </div>
-                <!-- featured-imagebox -->
-            </div>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1">
-                    <div class="featured-thumbnail">
-                        <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
-                    </div><!-- featured-thumbnail END-->
-                    <div class="ttm-box-view-overlay">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-media-link">
-                            <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
-                            </a>
-                        </div>
-                        <div class="featured-content">
-                            <!-- featured-content-->
-                            <div class="featured-title">
-                                <!-- featured-title-->
-                                <h5><a href="#">Barley Crop Field</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Dairy Farm</p>
-                            </div>
-                        </div>
-                    </div><!-- ttm-box-view-overlay end-->
-                </div>
-                <!-- featured-imagebox -->
-            </div>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1">
-                    <div class="featured-thumbnail">
-                        <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
-                    </div><!-- featured-thumbnail END-->
-                    <div class="ttm-box-view-overlay">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-media-link">
-                            <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
-                            </a>
-                        </div>
-                        <div class="featured-content">
-                            <!-- featured-content-->
-                            <div class="featured-title">
-                                <!-- featured-title-->
-                                <h5><a href="#">Garden Supplies</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Garden Care</p>
-                            </div>
-                        </div>
-                    </div><!-- ttm-box-view-overlay end-->
-                </div>
-                <!-- featured-imagebox -->
-            </div>
-            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
-                <!-- featured-imagebox -->
-                <div class="featured-imagebox featured-imagebox-portfolio style1">
-                    <div class="featured-thumbnail">
-                        <!-- featured-thumbnail-->
-                        <img class="img-fluid" src="https://via.placeholder.com/722X570/444444.jpg" alt="image">
-                    </div><!-- featured-thumbnail END-->
-                    <div class="ttm-box-view-overlay">
-                        <!-- ttm-box-view-overlay -->
-                        <div class="ttm-media-link">
-                            <!-- ttm-media-link-->
-                            <a class="ttm_prettyphoto ttm_image" data-gal="prettyPhoto[gallery1]" title="" href="https://via.placeholder.com/722X570/444444.jpg" data-rel="prettyPhoto">
-                                <i class="ti ti-search"></i>
-                            </a>
-                        </div>
-                        <div class="featured-content">
-                            <!-- featured-content-->
-                            <div class="featured-title">
-                                <!-- featured-title-->
-                                <h5><a href="#">Organic Cultural Effect</a></h5>
-                            </div>
-                            <div class="category">
-                                <!-- category -->
-                                <p>Fresh Garden, Dairy Farm</p>
-                            </div>
-                        </div>
-                    </div><!-- ttm-box-view-overlay end-->
-                </div>
-                <!-- featured-imagebox -->
-            </div>
+            @endforeach
+
+            
         </div><!-- row -->
     </div>
 </section>
