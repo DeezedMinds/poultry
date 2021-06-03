@@ -37,6 +37,9 @@ Route::get('/servicios', function () {
 Route::get('/representaciones', function () {
     return view('pages.representaciones');
 });
+Route::get('/recursos', function () {
+    return view('pages.resources');
+});
 
 Route::get('/productos', [WebController::class, 'index'])->name('web.products.index');
 Route::get('/productos/{id}', [WebController::class, 'show'])->name('web.products.show');

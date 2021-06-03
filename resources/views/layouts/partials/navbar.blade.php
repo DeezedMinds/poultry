@@ -115,7 +115,7 @@
                                     </li>
                                     <li><a href="/representaciones">Representaciones</a>
                                     </li>
-                                    <li><a href="#">Recursos</a>
+                                    <li><a href="/recursos">Recursos</a>
                                     </li>
                                 </ul>
                             </nav>
