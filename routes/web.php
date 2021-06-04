@@ -40,6 +40,9 @@ Route::get('/representaciones', function () {
 Route::get('/recursos', function () {
     return view('pages.resources');
 });
+Route::get('/contacto', function () {
+    return view('pages.contacto');
+});
 
 Route::get('/productos', [WebController::class, 'index'])->name('web.products.index');
 Route::get('/productos/{id}', [WebController::class, 'show'])->name('web.products.show');

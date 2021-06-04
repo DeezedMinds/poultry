@@ -53,27 +53,6 @@
                         <div id="site-navigation" class="site-navigation">
                             <div class="ttm-custombutton">
                             </div>
-                            <!-- header-icons -->
-                            <div class="ttm-header-icons ">
-                                <div class="ttm-header-icon ttm-header-search-link">
-                                    <a href="#" class="sclose"><i class="ti ti-search"></i></a>
-                                    <div class="ttm-search-overlay">
-                                        <div class="ttm-bg-layer"></div>
-                                        <div class="ttm-icon-close"></div>
-                                        <div class="ttm-search-outer">
-                                            <form method="get" class="ttm-site-searchform" action="#">
-                                                <input type="search" class="field searchform-s" name="s" placeholder="Type Word Then Enter...">
-                                                <button type="submit">
-                                                    <i class="ti ti-search"></i>
-                                                </button>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ttm-header-icon ttm-header-user-link">
-                                    <a href="{{route('login')}}" class=""><i class="ti ti-user"></i></a>
-                                </div>
-                            </div><!-- header-icons end -->
                             <div class="ttm-menu-toggle">
                                 <input type="checkbox" id="menu-toggle-form" />
                                 <label for="menu-toggle-form" class="ttm-menu-toggle-block">
@@ -113,10 +92,9 @@
                                             <li><a href="#">Mantenimiento</a></li>
                                         </ul>
                                     </li>
-                                    <li><a href="/representaciones">Representaciones</a>
-                                    </li>
-                                    <li><a href="/recursos">Recursos</a>
-                                    </li>
+                                    <li><a href="/representaciones">Representaciones</a></li>
+                                    <li><a href="/recursos">Recursos</a></li>
+                                    <li><a href="/contacto">Contacto</a></li>
                                 </ul>
                             </nav>
                         </div><!-- site-navigation end-->
