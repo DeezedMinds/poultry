@@ -308,7 +308,7 @@
                             <h2 class="title font-weight-normal"> Provee las mejores soluciones para la avicultura y ganadería en general</h2>
                         </div>
                     </div><!-- section-title end -->
-                    <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> Sobre POULTRY INDUSTRIAL</a>
+                    <a href="/nosotros" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> Sobre POULTRY INDUSTRIAL</a>
                 </div>
             </div>
         </div><!-- row -->
