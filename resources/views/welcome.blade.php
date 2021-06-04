@@ -237,7 +237,11 @@
             </div>
             <div class="col-lg-4">
                 <!--  featured-icon-box -->
-                <div class="featured-icon-box left-icon style2 ttm-bgcolor-white res-991-mt-20">
+                <div class="featured-icon-box left-icon style2 ttm-bgcolor-white res-991-mt-20" style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                ">
                     <div class="featured-icon">
                         <!--  featured-icon -->
                         <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
@@ -254,7 +258,7 @@
                             <p>profesional</p>
                         </div>
                     </div>
-                </div><!--  featured-icon-box END -->
+                </div>
             </div>
             <div class="col-lg-4">
                 <!--  featured-icon-box -->
