@@ -248,11 +248,10 @@
                         <!--  featured-content -->
                         <div class="featured-title">
                             <!--  featured-title -->
-                            <h5>Equipo de trabajo profesional</h5>
-                            <p> </p>
+                            <h5>Equipo de trabajo</h5>
                         </div>
                         <div class="featured-desc">
-                            <!--  featured-desc -->
+                            <p>profesional</p>
                         </div>
                     </div>
                 </div><!--  featured-icon-box END -->
