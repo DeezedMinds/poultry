@@ -63,7 +63,7 @@
                             </div>
                             <nav id="menu" class="menu">
                                 <ul class="dropdown">
-                                    <li><a href="/nosotros">Nosotros</a></li>
+                                    <li><a href="/nosotros"><img src="images/Imagenes/Nosotros.png" height="50" class="flex"  srcset=""></a></li>
                                     <li><a href="/aves">Aves</a>
                                         <ul>
                                             @foreach(App\Models\Category::birds()->get() as $bird)
