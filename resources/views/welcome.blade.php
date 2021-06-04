@@ -397,10 +397,10 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/Blog/valco.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/Valco.png" title="single-img-one" alt="single-img-one">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/Blog/sec/airetecnica.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/Airetecnica.png" title="single-img-one" alt="single-img-one">
                             </div>
                         </div>
                         <div class="row mt-4">
