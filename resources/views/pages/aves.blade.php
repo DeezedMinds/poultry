@@ -33,7 +33,7 @@
     <!-- services-section -->
     <section class="ttm-row zero-padding-section position-relative z-1 clearfix">
         <div class="container">
-            <div class="row no-gutters top-icon-row ttm-bgcolor-white mt_60 res-991-mt-0">
+            <div class="row no-gutters ttm-bgcolor-white mt_60 res-991-mt-0">
                 <!-- row -->
                 <div class="col-lg col-sm-6 col-md-6">
                     <!--  featured-icon-box -->
