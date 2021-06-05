@@ -37,75 +37,83 @@
                 <!-- row -->
                 <div class="col-lg col-sm-6 col-md-6">
                     <!--  featured-icon-box -->
-                    <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
-                        <div class="featured-icon">
-                            <!--  featured-icon -->
-                            <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                <i class="flaticon flaticon-gmo-1"></i><!--  ttm-icon -->
+                    <a href="/aves/1">
+                        <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
+                            <div class="featured-icon">
+                                <!--  featured-icon -->
+                                <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                    <i class="flaticon flaticon-gmo-1"></i><!--  ttm-icon -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured-content">
-                            <!--  featured-content -->
-                            <div class="featured-title">
-                                <!--  featured-title -->
-                                <h5>POLLO DE ENGORDE</h5>
+                            <div class="featured-content">
+                                <!--  featured-content -->
+                                <div class="featured-title">
+                                    <!--  featured-title -->
+                                    <h5>POLLO DE ENGORDE</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div><!--  featured-icon-box END -->
+                        </div><!--  featured-icon-box END -->
+                    </a>
                 </div>
                 <div class="col-lg col-sm-6 col-md-6">
                     <!--  featured-icon-box -->
-                    <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
-                        <div class="featured-icon">
-                            <!--  featured-icon -->
-                            <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                <i class="flaticon flaticon-farmer-1"></i><!--  ttm-icon -->
+                    <a href="/aves/2">
+                        <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
+                            <div class="featured-icon">
+                                <!--  featured-icon -->
+                                <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                    <i class="flaticon flaticon-farmer-1"></i><!--  ttm-icon -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured-content">
-                            <!--  featured-content -->
-                            <div class="featured-title">
-                                <!--  featured-title -->
-                                <h5>GALLINAS PONEDORAS</h5>
+                            <div class="featured-content">
+                                <!--  featured-content -->
+                                <div class="featured-title">
+                                    <!--  featured-title -->
+                                    <h5>GALLINAS PONEDORAS</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div><!--  featured-icon-box END -->
+                        </div><!--  featured-icon-box END -->
+                    </a><!--  featured-icon-box END -->
                 </div>
                 <div class="col-lg col-sm-6 col-md-6">
                     <!--  featured-icon-box -->
-                    <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
-                        <div class="featured-icon">
-                            <!--  featured-icon -->
-                            <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon -->
+                    <a href="/aves/3">
+                        <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
+                            <div class="featured-icon">
+                                <!--  featured-icon -->
+                                <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                    <i class="flaticon flaticon-agriculture"></i><!--  ttm-icon -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured-content">
-                            <!--  featured-content -->
-                            <div class="featured-title">
-                                <!--  featured-title -->
-                                <h5>REPRODUCTORAS</h5>
+                            <div class="featured-content">
+                                <!--  featured-content -->
+                                <div class="featured-title">
+                                    <!--  featured-title -->
+                                    <h5>REPRODUCTORAS</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div><!--  featured-icon-box END -->
+                        </div><!--  featured-icon-box END -->
+                    </a>
                 </div>
                 <div class="col-lg col-sm-12 col-md-12">
                     <!--  featured-icon-box -->
-                    <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
-                        <div class="featured-icon">
-                            <!--  featured-icon -->
-                            <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
-                                <i class="flaticon flaticon-shovel"></i><!--  ttm-icon -->
+                    <a href="/aves/4">
+                        <div class="featured-icon-box top-icon style1 text-center ttm-bgcolor-white">
+                            <div class="featured-icon">
+                                <!--  featured-icon -->
+                                <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
+                                    <i class="flaticon flaticon-shovel"></i><!--  ttm-icon -->
+                                </div>
                             </div>
-                        </div>
-                        <div class="featured-content">
-                            <!--  featured-content -->
-                            <div class="featured-title">
-                                <!--  featured-title -->
-                                <h5>PAVOS</h5>
+                            <div class="featured-content">
+                                <!--  featured-content -->
+                                <div class="featured-title">
+                                    <!--  featured-title -->
+                                    <h5>PAVOS</h5>
+                                </div>
                             </div>
-                        </div>
-                    </div><!--  featured-icon-box END -->
+                        </div><!--  featured-icon-box END -->
+                    </a>
                 </div>
             </div>
             <!-- row end -->

@@ -340,14 +340,13 @@
                     </p>
                     <div class="mt-25">
                         <ul class="ttm-list ttm-list-style-icon">
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Pollo de Engorde</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Gallinas Ponedoras / Postura</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Reproductoras</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Pavos</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Cerdos </span></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/1"><span class="ttm-list-li-content">Pollo de Engorde</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/2"><span class="ttm-list-li-content">Gallinas Ponedoras / Postura</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/3"><span class="ttm-list-li-content">Reproductoras</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/4"><span class="ttm-list-li-content">Pavos</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/cerdos"><span class="ttm-list-li-content">Cerdos </span></a></li>
                         </ul>
                     </div>
-                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right mt-15" href="#">Más Info<i class="ti ti-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-8" style="display: block;">
@@ -468,6 +467,110 @@
     </div>
 </section>
 <!-- row-title-section -->
+
+<!-- portfolio-text-section -->
+<section class="ttm-row portfolio-text-section ttm-bgcolor-grey clearfix">
+    <div class="container">
+        <div class="row">
+            <!-- row -->
+            <div class="col-lg-12">
+                <!-- section title -->
+                <div class="section-title text-center clearfix">
+                    <div class="title-header">
+                        <h5>RECIENTES ENTREGAS</h5>
+                        <h2 class="title">Últimos proyectos</h2>
+                    </div>
+                    <div class="heading-seperator">
+                        <span></span>
+                    </div>
+                </div><!-- section title end -->
+            </div>
+        </div><!-- row -->
+    </div>
+</section>
+<!-- portfolio-text-section -->
+
+<!-- portfolio-section -->
+<section class="ttm-row topzero-padding-section clearfix">
+    <div class="container">
+        <div class="row multi-columns-row ttm-boxes-spacing-10px ttm-bgcolor-white mt_140">
+            <!-- row -->
+
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+        </div><!-- row -->
+    </div>
+</section>
 
 <!-- portfolio-text-section -->
 <section class="ttm-row portfolio-text-section ttm-bgcolor-grey clearfix">

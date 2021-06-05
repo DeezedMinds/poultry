@@ -63,11 +63,11 @@
                             </div>
                             <nav id="menu" class="menu">
                                 <ul class="dropdown">
-                                    <li><a href="/nosotros"><img src="images/Imagenes/Nosotros.png" height="50" class="flex"  srcset=""></a></li>
+                                    <li><a href="/nosotros"><img src="/images/Imagenes/Nosotros.png" height="50" class="flex"  srcset=""></a></li>
                                     <li><a href="/aves">Aves</a>
                                         <ul>
                                             @foreach(App\Models\Category::birds()->get() as $bird)
-                                            <li><a href="/aves">{{$bird->name }}</a>
+                                            <li><a href="{{route('aves.show', $bird->id)}}">{{$bird->name }}</a>
                                                 <ul>
                                                     @foreach($bird->subcategories as $sub)
                                                         <li><a href="{{route('web.products.subcategoryIndex', $sub->id)}}">{{ $sub->name }}</a></li>
