@@ -18,7 +18,7 @@
                         <div class="ttm-pf-single-title">
                             <h5>Historia</h5>
                         </div>
-                        <p>Compañia fundada en el año 2003 por el ingeniero zootecnista José La Puente con el objetivo de suministrar al mercado pecario de las mejores tecnologías de automatización para formar granjas de alto rendimiento, sumando hasta la fecha más de 800 proyectos vendidos en granjas.</p>
+                        <p style="text-align:justify">Compañía fundada en el año 2003 por el ingeniero zootecnista José La Puente con el objetivo de suministrar al mercado pecuario de las mejores tecnologías de automatización para formar granjas de alto rendimiento, sumando hasta la fecha más de 1000 proyectos vendidos en granjas.</p>
                         <ul class="ttm-pf-detailbox-list">
                             <li><i class="flaticon-quotation"></i><b>Las principales líneas de negocio que tiene la empresa son:</b></li>
                             <li><i class="fa fa-arrow-right ttm-textcolor-skincolor"></i>Representación y venta de equipamiento pecuario</li>
