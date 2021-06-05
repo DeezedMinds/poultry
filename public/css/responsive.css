@@ -657,7 +657,7 @@
 
 
 	/* featured-icon-box */
-	.featured-icon-box.top-icon.style1 { padding: 25px 15px 25px 15px;}
+	.featured-icon-box.top-icon.style1 { padding: 10px 15px 10px 15px;}
 	.ttm-play-icon-btn-center.style2 { right: 0;left: 0; margin-left: 0;}
 	.ttm-highlight-fid-style-1.inside{left: 15px;}
 	.row > [class*='col-']:not(:last-child) > .featured-icon-box.left-icon.style7:before {
