@@ -94,7 +94,49 @@
     </section>
     <!-- services-section end -->
 
-
+    <!-- process-section end -->
+    <section class="ttm-row process-section clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <!-- section title -->
+                    <div class="section-title text-center clearfix">
+                        <div class="title-header">
+                            <h5>EQUIPO PARA CERDOS</h5>
+                            <h2 class="title">PRODUCTOS DESTACADOS</h2>
+                        </div>
+                        <div class="heading-seperator">
+                            <span></span>
+                        </div>
+                    </div><!-- section title end -->
+                </div>
+            </div>
+            <!-- row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="ttm-processbox-wrapper">
+                        @foreach($featured as $index => $product)
+                            <div class="ttm-processbox text-center" onclick="window.location.href='{{route('web.products.show', $product->id)}}'">
+                                <div class="ttm-box-image">
+                                    <img class="img-fluid" src="{{ $product->image }}" alt="step-one" title="step-one">
+                                    <div class="process-num">
+                                        <span class="number">{{ $index + 1 }}</span>
+                                    </div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5>{{ $product->name }}</h5>
+                                    </div>
+                                    <div class="ttm-box-description">{{ $product->description }}</div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div><!-- row end -->
+        </div>
+    </section>
+    <!-- process-section end -->
 
     <!-- services-section -->
     <section class="ttm-row second-services-section mt_60 ttm-bgcolor-darkgrey ttm-bg ttm-bgimage-yes bg-img4 clearfix">
@@ -189,50 +231,6 @@
         </div>
     </section>
     <!-- services-section -->
-
-    <!-- process-section end -->
-    <section class="ttm-row process-section clearfix">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <!-- section title -->
-                    <div class="section-title text-center clearfix">
-                        <div class="title-header">
-                            <h5>EQUIPO PARA CERDOS</h5>
-                            <h2 class="title">PRODUCTOS DESTACADOS</h2>
-                        </div>
-                        <div class="heading-seperator">
-                            <span></span>
-                        </div>
-                    </div><!-- section title end -->
-                </div>
-            </div>
-            <!-- row -->
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="ttm-processbox-wrapper">
-                        @foreach($featured as $index => $product)
-                            <div class="ttm-processbox text-center" onclick="window.location.href='{{route('web.products.show', $product->id)}}'">
-                                <div class="ttm-box-image">
-                                    <img class="img-fluid" src="{{ $product->image }}" alt="step-one" title="step-one">
-                                    <div class="process-num">
-                                        <span class="number">{{ $index + 1 }}</span>
-                                    </div>
-                                </div>
-                                <div class="featured-content">
-                                    <div class="featured-title">
-                                        <h5>{{ $product->name }}</h5>
-                                    </div>
-                                    <div class="ttm-box-description">{{ $product->description }}</div>
-                                </div>
-                            </div>
-                        @endforeach
-                    </div>
-                </div>
-            </div><!-- row end -->
-        </div>
-    </section>
-    <!-- process-section end -->
 
     <!-- processbar-section -->
     <section class="ttm-row zero-padding-section position-relative z-1 clearfix">
