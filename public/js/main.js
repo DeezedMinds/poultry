@@ -203,6 +203,23 @@ $('.ttm-tabs').each(function() {
     });
 });
 
+/*------------------------------------------------------------------------------*/
+/* Obras tabs
+/*------------------------------------------------------------------------------*/ 
+
+$('.ttm-service-single-content-area').each(function() {
+    $(this).children('.poultry-content').hide();
+    $(this).children('.poultry-content').first().show();
+});
+
+$('.poultry-obras-tabs').children('li').on('click', function(e) {
+    var liActive = $(this).index();
+    $('.poultry-content').eq(liActive).fadeIn('slow').show();
+    $('.poultry-content').eq(liActive).siblings().hide();
+    
+    e.preventDefault();
+});
+
 
 /*------------------------------------------------------------------------------*/
 /* Accordion
