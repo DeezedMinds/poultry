@@ -1,5 +1,24 @@
 @extends('layouts.template')
 @section('content')
+<div>
+    <!-- Modal HTML -->
+    <div id="videoModal" class="modal fade" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true" data-backdrop="false">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Videos de Poultry</h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                  <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="trailerVideo" class="embed-responsive-item" width="560" height="315" src="//www.youtube.com/channel/UCrNNQTTWe8PqAcwrd_pue7w " allowfullscreen type="text/html" ></iframe>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- START homeclassicmain REVOLUTION SLIDER 6.0.1 -->
 <rs-module-wrap id="rev_slider_2_1_wrapper" data-source="gallery">
     <rs-module id="rev_slider_2_1" data-version="6.1.2" class="rev_slider_2_1_height">
@@ -12,13 +31,13 @@
                 </rs-layer>
                 <rs-layer id="slider-2-slide-2-layer-2" class="head-font" data-type="text" data-color="#bababa" data-rsp_ch="on" data-xy="x:l,l,c,c;xo:50px,50px,0,528px;yo:353px,353px,230px,95px;" data-text="w:normal;s:17,17,14,14;l:26,26,22,20;a:left,left,center,center;" data-vbility="t,t,t,f" data-frame_0="x:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:820;sp:600;sR:820;" data-frame_999="o:0;st:w;sR:7580;">Comederos automáticos, bebederos automáticos niple, bombas dosificadoras y <br>demás equipamiento dentro y fuera del galpón avícola. Productos para ponedoras comerciales, pollo de engorde, reproductoras y pavos.
                 </rs-layer>
-                <a id="slider-2-slide-2-layer-3" class="rs-layer ttm-btn-color-white ttm-btn-style-border ttm-btn ttm-btn-size-md" href="#" target="_self" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:l,l,c,c;xo:50px,50px,-90px,0;yo:449px,449px,302px,168px;" data-text="w:normal;s:15,15,14,12;l:15,15,14,12;fw:600;" data-padding="t:16,16,12,12;r:35,35,25,25;b:16,16,12,12;l:35,35,25,25;" data-border="bos:solid;boc:#ffffff;bow:1px,1px,1px,1px;" data-frame_0="y:100%;" data-frame_1="e:Linear.easeNone;st:970;sp:500;sR:970;" data-frame_999="o:0;st:w;sR:7530;" data-frame_hover="bgc:#fff;boc:#fff;bos:solid;bow:1px,1px,1px,1px;sp:300ms;">DESCARGAR <br>CATALOGO AVÍCOLA
+                <a id="slider-2-slide-2-layer-3" class="rs-layer ttm-btn-color-white ttm-btn-style-border ttm-btn ttm-btn-size-md" download href="/docs/AVES.pdf" target="_self" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:l,l,c,c;xo:50px,50px,-90px,0;yo:449px,449px,302px,168px;" data-text="w:normal;s:15,15,14,12;l:15,15,14,12;fw:600;" data-padding="t:16,16,12,12;r:35,35,25,25;b:16,16,12,12;l:35,35,25,25;" data-border="bos:solid;boc:#ffffff;bow:1px,1px,1px,1px;" data-frame_0="y:100%;" data-frame_1="e:Linear.easeNone;st:970;sp:500;sR:970;" data-frame_999="o:0;st:w;sR:7530;" data-frame_hover="bgc:#fff;boc:#fff;bos:solid;bow:1px,1px,1px,1px;sp:300ms;">DESCARGAR <br>CATALOGO AVÍCOLA
                 </a>
                 <rs-layer id="slider-2-slide-2-layer-4" class="head-font" data-type="text" data-rsp_ch="on" data-xy="x:l,l,c,c;xo:50px,50px,0,0;yo:162px,162px,97px,58px;" data-text="w:normal;s:80,80,55,35;l:95,95,65,50;fw:600;" data-frame_0="x:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:260;sp:900;sR:260;" data-frame_999="o:0;st:w;sR:7840;">SISTEMAS Y EQUIPOS
                 </rs-layer>
-                <a id="slider-2-slide-2-layer-5" class="rs-layer ttm_prettyphoto ttm-bgcolor-skincolor" href="https://youtu.be/7e90gBu4pas" target="_self" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:-321px,-210px,25px,0;yo:449px,449px,305px,223px;" data-text="w:normal;s:20,20,12,15;l:50,50,31,40;a:center;" data-dim="w:50px,50px,31px,40px;h:50px,50px,31px,40px;" data-border="bor:50%,50%,50%,50%;" data-frame_0="y:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:970;sp:500;sR:970;" data-frame_999="o:0;st:w;sR:7530;" data-frame_hover="bgc:#232323;bor:50%,50%,50%,50%;bos:solid;" style="margin-left: 100px;"><i class="fa fa-play"></i>
+                <a href="#" data-toggle="modal" id="slider-2-slide-2-layer-5" class="rs-layer ttm_prettyphoto ttm-bgcolor-skincolor" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:-321px,-210px,25px,0;yo:449px,449px,305px,223px;" data-text="w:normal;s:20,20,12,15;l:50,50,31,40;a:center;" data-dim="w:50px,50px,31px,40px;h:50px,50px,31px,40px;" data-border="bor:50%,50%,50%,50%;" data-frame_0="y:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:970;sp:500;sR:970;" data-frame_999="o:0;st:w;sR:7530;" data-frame_hover="bgc:#232323;bor:50%,50%,50%,50%;bos:solid;" style="margin-left: 100px;"><i class="fa fa-play"></i>
                 </a>
-                <a id="slider-2-slide-2-layer-6" class="rs-layer head-font" href="#" target="_self" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:-237px,-125px,95px,0;yo:465px,465px,314px,279px;" data-text="w:normal;s:15,15,9,12;l:20,20,12,12;fw:500;" data-frame_0="y:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:1050;sp:500;sR:1050;" data-frame_999="o:0;st:w;sR:7450;" style="margin-left: 80px;">VER VIDEO
+                <a data-toggle="modal" id="slider-2-slide-2-layer-6" class="rs-layer head-font" href="#videoModal" target="_self" rel="nofollow" data-type="text" data-rsp_ch="on" data-xy="x:c;xo:-237px,-125px,95px,0;yo:465px,465px,314px,279px;" data-text="w:normal;s:15,15,9,12;l:20,20,12,12;fw:500;" data-frame_0="y:50,50,31,19;" data-frame_1="e:Linear.easeNone;st:1050;sp:500;sR:1050;" data-frame_999="o:0;st:w;sR:7450;" style="margin-left: 80px;">VER VIDEOS
                 </a>
             </rs-slide>
         </rs-slides>
@@ -327,5 +346,24 @@
     </section>
     <!-- processbar-section -->
 </div>
+<script>
+$(document).ready(function(){
+    /* Get iframe src attribute value i.e. YouTube video url
+    and store it in a variable */
+    var url = $("#trailerVideo").attr('src');
+    
+    /* Assign empty url value to the iframe src attribute when
+    modal hide, which stop the video playing */
+    $("#videoModal").on('hide.bs.modal', function(){
+        $("#trailerVideo").attr('src', '');
+    });
+    
+    /* Assign the initially stored url back to the iframe src
+    attribute when modal is displayed again */
+    $("#videoModal").on('show.bs.modal', function(){
+        $("#trailerVideo").attr('src', url);
+    });
+});
+</script>
 <!--site-main end-->
 @endsection

@@ -280,15 +280,7 @@
                         <ul class="download">
                             <li>
                                 <i class="fa fa-file-pdf-o"></i>
-                                <a href="#" title="Download">Download.pdf</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-file-word-o"></i>
-                                <a href="#" title="Download">Our ISO Certificate</a>
-                            </li>
-                            <li>
-                                <i class="fa fa-files-o"></i>
-                                <a href="#" title="Download">Download.txt</a>
+                                <a href="/docs/SERVICIOS.pdf" download title="Download" alt="servicios.pdf" >Servicios</a>
                             </li>
                         </ul>
                     </aside>
