@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-lg-12 content-area">
                     <div class="row">
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -22,7 +22,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -35,7 +35,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -48,7 +48,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -61,7 +61,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -74,7 +74,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -87,7 +87,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -100,7 +100,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -113,7 +113,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -127,7 +127,7 @@
                             </div>
                         </div>
 
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -140,7 +140,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -153,7 +153,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -166,7 +166,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -179,7 +179,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -192,7 +192,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -205,7 +205,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">
@@ -218,7 +218,7 @@
                                 </div><!-- product-thumbnail end -->
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-6">
+                        <div class="col-lg-4 col-md-6 col-sm-6 col-6">
                             <div class="product">
                                 <!-- product -->
                                 <div class="product-thumbnail">

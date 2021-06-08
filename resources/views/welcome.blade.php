@@ -237,7 +237,11 @@
             </div>
             <div class="col-lg-4">
                 <!--  featured-icon-box -->
-                <div class="featured-icon-box left-icon style2 ttm-bgcolor-white res-991-mt-20">
+                <div class="featured-icon-box left-icon style2 ttm-bgcolor-white res-991-mt-20" style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                ">
                     <div class="featured-icon">
                         <!--  featured-icon -->
                         <div class="ttm-icon ttm-icon_element-color-skincolor ttm-icon_element-size-lg">
@@ -248,14 +252,13 @@
                         <!--  featured-content -->
                         <div class="featured-title">
                             <!--  featured-title -->
-                            <h5>Equipo de trabajo profesional</h5>
-                            <p> </p>
+                            <h5>Equipo de trabajo</h5>
                         </div>
                         <div class="featured-desc">
-                            <!--  featured-desc -->
+                            <p>profesional</p>
                         </div>
                     </div>
-                </div><!--  featured-icon-box END -->
+                </div>
             </div>
             <div class="col-lg-4">
                 <!--  featured-icon-box -->
@@ -305,7 +308,7 @@
                             <h2 class="title font-weight-normal"> Provee las mejores soluciones para la avicultura y ganadería en general</h2>
                         </div>
                     </div><!-- section-title end -->
-                    <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> Sobre POULTRY INDUSTRIAL</a>
+                    <a href="/nosotros" class="ttm-btn ttm-btn-size-md ttm-btn-bgcolor-darkgrey mt-20 mr-10"> Sobre POULTRY INDUSTRIAL</a>
                 </div>
             </div>
         </div><!-- row -->
@@ -337,14 +340,13 @@
                     </p>
                     <div class="mt-25">
                         <ul class="ttm-list ttm-list-style-icon">
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Pollo de Engorde</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Gallinas Ponedoras / Postura</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Reproductoras</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Pavos</span></li>
-                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><span class="ttm-list-li-content">Cerdos </span></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/1"><span class="ttm-list-li-content">Pollo de Engorde</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/2"><span class="ttm-list-li-content">Gallinas Ponedoras / Postura</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/3"><span class="ttm-list-li-content">Reproductoras</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/aves/4"><span class="ttm-list-li-content">Pavos</span></a></li>
+                            <li><i class="fa fa-check-circle-o ttm-textcolor-skincolor"></i><a href="/cerdos"><span class="ttm-list-li-content">Cerdos </span></a></li>
                         </ul>
                     </div>
-                    <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right mt-15" href="#">Más Info<i class="ti ti-angle-right"></i></a>
                 </div>
             </div>
             <div class="col-lg-8" style="display: block;">
@@ -397,10 +399,10 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/Blog/valco.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/Valco.png" title="single-img-one" alt="single-img-one">
                             </div>
                             <div class="col-6">
-                                <img class="img-fluid" src="images/marcas/Blog/sec/airetecnica.png" title="single-img-one" alt="single-img-one">
+                                <img class="img-fluid" src="images/marcas/Blog/sec/Airetecnica.png" title="single-img-one" alt="single-img-one">
                             </div>
                         </div>
                         <div class="row mt-4">
@@ -465,6 +467,110 @@
     </div>
 </section>
 <!-- row-title-section -->
+
+<!-- portfolio-text-section -->
+<section class="ttm-row portfolio-text-section ttm-bgcolor-grey clearfix">
+    <div class="container">
+        <div class="row">
+            <!-- row -->
+            <div class="col-lg-12">
+                <!-- section title -->
+                <div class="section-title text-center clearfix">
+                    <div class="title-header">
+                        <h5>RECIENTES ENTREGAS</h5>
+                        <h2 class="title">Últimos proyectos</h2>
+                    </div>
+                    <div class="heading-seperator">
+                        <span></span>
+                    </div>
+                </div><!-- section title end -->
+            </div>
+        </div><!-- row -->
+    </div>
+</section>
+<!-- portfolio-text-section -->
+
+<!-- portfolio-section -->
+<section class="ttm-row topzero-padding-section clearfix">
+    <div class="container">
+        <div class="row multi-columns-row ttm-boxes-spacing-10px ttm-bgcolor-white mt_140">
+            <!-- row -->
+
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+            <div class="ttm-box-col-wrapper col-lg-4 col-md-6 col-sm-6">
+                <!-- featured-imagebox -->
+                <div class="featured-imagebox featured-imagebox-portfolio style1">
+                    <div class="featured-thumbnail">
+                        <!-- featured-thumbnail-->
+                        <img class="img-fluid" src="images/downloadpdf.png" alt="image">
+                    </div><!-- featured-thumbnail END-->
+                </div>
+                <!-- featured-imagebox -->
+            </div>
+
+            
+        </div><!-- row -->
+    </div>
+</section>
 
 <!-- portfolio-text-section -->
 <section class="ttm-row portfolio-text-section ttm-bgcolor-grey clearfix">

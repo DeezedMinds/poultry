@@ -24,6 +24,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/aves', [BirdController::class, 'index']);
+Route::get('/aves/{category}', [BirdController::class, 'show'])->name('aves.show');
 Route::get('/cerdos', [PigController::class, 'index']);
 Route::get('/nosotros', function () {
     return view('pages.nosotros');
@@ -39,6 +40,9 @@ Route::get('/representaciones', function () {
 });
 Route::get('/recursos', function () {
     return view('pages.resources');
+});
+Route::get('/contacto', function () {
+    return view('pages.contacto');
 });
 
 Route::get('/productos', [WebController::class, 'index'])->name('web.products.index');

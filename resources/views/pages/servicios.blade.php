@@ -121,14 +121,14 @@
                             <!--  featured-content -->
                             <div class="featured-title">
                                 <!--  featured-title -->
-                                <h5 class="mb-10"><a href="#"> OBRAS CIVILES Y CONSTRUCCIONES </a></h5>
+                                <h5 class="mb-10"><a href="/obras"> OBRAS CIVILES Y CONSTRUCCIONES </a></h5>
                             </div>
                             <div class="featured-desc">
                                 <!--  featured-desc -->
                                 <p>Construimos todo tipo de necesidad en granja, desde galpones clásicos hasta </p>
                             </div>
                             <hr>
-                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="/obras">Leer más <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div><!--  featured-icon-box END -->
                 </div>
@@ -153,7 +153,7 @@
                                 <p>Instalamos todos los sistemas que vendemos: comederos automáticos, bebederos automáticos, ventilación, además de redes troncales eléctricas, de suministro de agua, paneles de control. Experiencia en todo tipo de equipamiento y marca. </p>
                             </div>
                             <hr>
-                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="#">Leer más <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div><!--  featured-icon-box END -->
                 </div>
@@ -178,7 +178,7 @@
                                 <p>Manejamos garantía con nuestros trabajos y productos, así como asegurarle al cliente la posibilidad de tener repuestos lo antes posible.</p>
                             </div>
                             <hr>
-                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="#">Learn More <i class="fa fa-chevron-right"></i></a>
+                            <a class="ttm-btn ttm-btn-size-sm ttm-btn-color-darkgrey btn-inline ttm-icon-btn-right" href="#">Leer más <i class="fa fa-chevron-right"></i></a>
                         </div>
                     </div><!--  featured-icon-box END -->
                 </div>
@@ -208,7 +208,7 @@
                             </div>
                         </div><!-- section title end -->
                         <div class="mt-40">
-                            <a href="#" class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-white">View More Services</a>
+                            <a href="/" class="ttm-btn ttm-btn-size-md ttm-btn-style-border ttm-btn-color-white">Ir al inicio</a>
                         </div>
                     </div>
                 </div>

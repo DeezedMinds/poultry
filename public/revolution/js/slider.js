@@ -26,7 +26,7 @@ jQuery(function() {
           touchenabled:true
         },
         arrows: {
-          enable:true,
+          enable:false,
           style:"custom",
           hide_onmobile:true,
           hide_under:768,
@@ -72,7 +72,7 @@ jQuery(function() {
           touchenabled:true
         },
         arrows: {
-          enable:true,
+          enable:false,
           style:"custom",
           hide_onmobile:true,
           hide_under:768,
@@ -118,7 +118,7 @@ jQuery(function() {
                     touchenabled:true
                 },
                 arrows: {
-                    enable:true,
+                    enable:false,
                     style:"custom",
                     hide_onmobile:true,
                     hide_under:768,
